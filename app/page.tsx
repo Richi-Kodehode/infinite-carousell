@@ -1,7 +1,9 @@
+import Slider from "./Components/Banner/Slider";
+
 export default function Home() {
   return (
     <div>
-      <h1>hello</h1>
+      <Slider />
     </div>
   );
 }
