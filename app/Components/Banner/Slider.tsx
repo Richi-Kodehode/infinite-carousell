@@ -1,11 +1,6 @@
-// components/Banner/Slider.tsx
-"use client";
-
 import Image from "next/image";
 import styles from "./Slider.module.css";
-import { DRAGON_IMAGES } from "./data/dragonImages";
 
-// Type for CSS custom properties
 interface SliderStyles extends React.CSSProperties {
   "--quantity": number;
 }
@@ -13,14 +8,25 @@ interface SliderStyles extends React.CSSProperties {
 interface ItemStyles extends React.CSSProperties {
   "--position": number;
 }
+interface SliderProps {
+  /**
+   * Array of image objects to be displayed in the slider.
+   * Each object should contain a `src` and `alt` property.
+   * Slider looks best with meximum 10 images.
+   */
+  images: {
+    src: string;
+    alt: string;
+  }[];
+}
 
-export default function Slider() {
+export default function Slider({ images }: SliderProps) {
   return (
     <div
       className={styles.slider}
-      style={{ "--quantity": DRAGON_IMAGES.length } as SliderStyles}
+      style={{ "--quantity": images.length } as SliderStyles}
     >
-      {DRAGON_IMAGES.map((image, index) => (
+      {images.map((image, index) => (
         <div
           key={image.src}
           className={styles.item}
