@@ -36,12 +36,6 @@ export const Slider: React.FC<SliderProps> = ({
   slides,
   className = "",
   showHeader = true,
-  headerLogo = {
-    src: "/ImgSliderImg/logo.png",
-    alt: "Logo",
-    width: 50,
-    height: 50,
-  },
 
   showNavigation = true,
   showContent = true,
@@ -76,44 +70,9 @@ export const Slider: React.FC<SliderProps> = ({
   }, []);
 
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${className}`}>
-      {/* Optional Header */}
-      {showHeader && (
-        <header className="w-[90vw] max-w-[1200px] h-[70px] mx-auto flex justify-between items-center relative z-10">
-          <div
-            className="relative"
-            style={{ width: headerLogo.width, height: headerLogo.height }}
-          >
-            <Image
-              src={headerLogo.src}
-              alt={headerLogo.alt}
-              width={headerLogo.width}
-              height={headerLogo.height}
-              className="object-contain"
-              priority
-            />
-          </div>
-          <nav>
-            <svg
-              className="w-6 h-6 text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeWidth="2"
-                d="M5 7h14M5 12h14M5 17h10"
-              />
-            </svg>
-          </nav>
-        </header>
-      )}
-
+    <div
+      className={`relative w-screen h-screen overflow-hidden mt-5 ${className}`}
+    >
       {/* Slider Content */}
       <div
         className={`relative w-full h-full ${showHeader ? "mt-[-70px]" : ""}`}
@@ -182,18 +141,6 @@ export const Slider: React.FC<SliderProps> = ({
                 >
                   {slides.content.title}
                 </h2>
-                {slides.content.description.map((paragraph, i) => (
-                  <p
-                    key={i}
-                    className={`${
-                      i === slides.content.description.length - 1
-                        ? "flex items-end pb-[25px]"
-                        : ""
-                    } text-sm md:text-base`}
-                  >
-                    {paragraph}
-                  </p>
-                ))}
               </div>
             )}
           </div>
