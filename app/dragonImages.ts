@@ -7,43 +7,43 @@ interface DragonImage {
 
 export const DRAGON_IMAGES: DragonImage[] = [
   {
-    src: "/bannerImg/dragon_1.jpg",
-    alt: "Dragon 1",
+    src: "/bannerImg/pt-01.jpg",
+    alt: "Image 1",
   },
   {
-    src: "/bannerImg/dragon_2.jpg",
-    alt: "Dragon 2",
+    src: "/bannerImg/pt-02.jpg",
+    alt: "Image 2",
   },
   {
-    src: "/bannerImg/dragon_3.jpg",
-    alt: "Dragon 3",
+    src: "/bannerImg/pt-03.jpg",
+    alt: "Image 3",
   },
   {
-    src: "/bannerImg/dragon_4.jpg",
-    alt: "Dragon 4",
+    src: "/bannerImg/bmw.jpg",
+    alt: "Image 4",
   },
   {
-    src: "/bannerImg/dragon_5.jpg",
-    alt: "Dragon 5",
+    src: "/bannerImg/merc.jpg",
+    alt: "Image 5",
   },
   {
-    src: "/bannerImg/dragon_6.jpg",
-    alt: "Dragon 6",
+    src: "/bannerImg/gtr.jpg",
+    alt: "Image 6",
   },
   {
-    src: "/bannerImg/dragon_7.jpg",
-    alt: "Dragon 7",
+    src: "/bannerImg/gtr1.jpg",
+    alt: "Image 7",
   },
   {
-    src: "/bannerImg/dragon_8.jpg",
-    alt: "Dragon 8",
+    src: "/bannerImg/nismo-1.jpg",
+    alt: "Image 8",
   },
   {
-    src: "/bannerImg/dragon_9.jpg",
-    alt: "Dragon 9",
+    src: "/bannerImg/nismo.jpg",
+    alt: "Image 9",
   },
   {
-    src: "/bannerImg/dragon_10.jpg",
-    alt: "Dragon 10",
+    src: "/bannerImg/volk.jpg",
+    alt: "Image 10",
   },
 ];
