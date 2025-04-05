@@ -1,11 +1,11 @@
-interface DragonImage {
+interface RandomImage {
   src: string;
   alt: string;
   width?: number;
   height?: number;
 }
 
-export const DRAGON_IMAGES: DragonImage[] = [
+export const RANDOM_IMAGES: RandomImage[] = [
   {
     src: "/bannerImg/pt-01.jpg",
     alt: "Image 1",
