@@ -1,4 +1,4 @@
-import { RANDOM_IMAGES } from "./dragonImages";
+import { RANDOM_IMAGES } from "./randomImage";
 import Slider from "./Components/Banner/Slider";
 
 // import ImgSlider from "./Components/ImageSlider/ImgSlider";

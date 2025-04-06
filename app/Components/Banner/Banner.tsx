@@ -1,5 +1,5 @@
 import styles from "./Banner.module.css";
-import { RANDOM_IMAGES } from "../../dragonImages";
+import { RANDOM_IMAGES } from "../../randomImage";
 import Slider from "./Slider";
 
 export default function Banner() {
